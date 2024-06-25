@@ -1,0 +1,108 @@
+def list_operations():
+    my_list = []
+    n = int(input("Enter the number of elements you want to add to the list: "))
+    
+    for i in range(n):
+        elem = int(input(f"Enter element {i+1}: "))
+        my_list.append(elem)
+    
+    print("Initial List:", my_list)
+    
+    # Adding an element to the list
+    add_elem = int(input("Enter an element to add to the list: "))
+    my_list.append(add_elem)
+    print("List after adding an element:", my_list)
+    
+    # Removing an element from the list
+    remove_elem = int(input("Enter an element to remove from the list: "))
+    if remove_elem in my_list:
+        my_list.remove(remove_elem)
+        print("List after removing an element:", my_list)
+    else:
+        print("Element not found in the list.")
+    
+    # Modifying an element in the list
+    index = int(input("Enter the index of the element you want to modify: "))
+    if 0 <= index < len(my_list):
+        new_value = int(input("Enter the new value: "))
+        my_list[index] = new_value
+        print("List after modifying an element:", my_list)
+    else:
+        print("Index out of range.")
+
+def dictionary_operations():
+    my_dict = {}
+    n = int(input("Enter the number of key-value pairs you want to add to the dictionary: "))
+    
+    for i in range(n):
+        key = input(f"Enter key {i+1}: ")
+        value = int(input(f"Enter value for key {key}: "))
+        my_dict[key] = value
+    
+    print("Initial Dictionary:", my_dict)
+    
+    # Adding a key-value pair to the dictionary
+    new_key = input("Enter a key to add to the dictionary: ")
+    new_value = int(input("Enter the value for the new key: "))
+    my_dict[new_key] = new_value
+    print("Dictionary after adding a key-value pair:", my_dict)
+    
+    # Removing a key-value pair from the dictionary
+    remove_key = input("Enter the key to remove from the dictionary: ")
+    if remove_key in my_dict:
+        del my_dict[remove_key]
+        print("Dictionary after removing a key-value pair:", my_dict)
+    else:
+        print("Key not found in the dictionary.")
+    
+    # Modifying a value in the dictionary
+    mod_key = input("Enter the key for which you want to modify the value: ")
+    if mod_key in my_dict:
+        new_value = int(input("Enter the new value: "))
+        my_dict[mod_key] = new_value
+        print("Dictionary after modifying a value:", my_dict)
+    else:
+        print("Key not found in the dictionary.")
+
+def set_operations():
+    my_set = set()
+    n = int(input("Enter the number of elements you want to add to the set: "))
+    
+    for i in range(n):
+        elem = int(input(f"Enter element {i+1}: "))
+        my_set.add(elem)
+    
+    print("Initial Set:", my_set)
+    
+    # Adding an element to the set
+    add_elem = int(input("Enter an element to add to the set: "))
+    my_set.add(add_elem)
+    print("Set after adding an element:", my_set)
+    
+    # Removing an element from the set
+    remove_elem = int(input("Enter an element to remove from the set: "))
+    if remove_elem in my_set:
+        my_set.remove(remove_elem)
+        print("Set after removing an element:", my_set)
+    else:
+        print("Element not found in the set.")
+    
+    # Modifying an element in the set (remove and add)
+    mod_elem = int(input("Enter an element to modify (remove and add a new one): "))
+    if mod_elem in my_set:
+        my_set.remove(mod_elem)
+        new_elem = int(input("Enter the new element to add: "))
+        my_set.add(new_elem)
+        print("Set after modifying an element (remove and add):", my_set)
+    else:
+        print("Element not found in the set.")
+
+# Running the functions
+print("List Operations:")
+list_operations()
+
+print("\nDictionary Operations:")
+dictionary_operations()
+
+print("\nSet Operations:")
+set_operations()
