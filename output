@@ -1,0 +1,46 @@
+List Operations:
+Enter the number of elements you want to add to the list: 4
+Enter element 1: 7
+Enter element 2: 9
+Enter element 3: 0
+Enter element 4: 1
+Initial List: [7, 9, 0, 1]
+Enter an element to add to the list: 2
+List after adding an element: [7, 9, 0, 1, 2]
+Enter an element to remove from the list: 2
+List after removing an element: [7, 9, 0, 1]
+Enter the index of the element you want to modify: 2
+Enter the new value: 8
+List after modifying an element: [7, 9, 8, 1]
+
+Dictionary Operations:
+Enter the number of key-value pairs you want to add to the dictionary: 2
+Enter key 1: 4
+Enter value for key 4: 5
+Enter key 2: 0
+Enter value for key 0: 1
+Initial Dictionary: {'4': 5, '0': 1}
+Enter a key to add to the dictionary: 7
+Enter the value for the new key: 8
+Dictionary after adding a key-value pair: {'4': 5, '0': 1, '7': 8}
+Enter the key to remove from the dictionary: 7
+Dictionary after removing a key-value pair: {'4': 5, '0': 1}
+Enter the key for which you want to modify the value: 4
+Enter the new value: 6
+Dictionary after modifying a value: {'4': 6, '0': 1}
+
+Set Operations:
+Enter the number of elements you want to add to the set: 3
+Enter element 1: 2
+Enter element 2: 1
+Enter element 3: 0
+Initial Set: {0, 1, 2}
+Enter an element to add to the set: 4
+Set after adding an element: {0, 1, 2, 4}
+Enter an element to remove from the set: 2
+Set after removing an element: {0, 1, 4}
+Enter an element to modify (remove and add a new one): 1
+Enter the new element to add: 8
+Set after modifying an element (remove and add): {0, 8, 4}
+
+=== Code Execution Successful ===
